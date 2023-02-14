@@ -99,13 +99,19 @@ class App{
         loader.setDRACOLoader( dracoLoader );
         
         const self = this;
+		//loader.load(
+			// resource URL
+			//'college.glb',
+			// called when the resource is loaded
+			//function ( gltf ) 
 		
 		// Load a glTF resource
-		loader.load(
-			// resource URL
-			'college.glb',
-			// called when the resource is loaded
-			function ( gltf ) {
+		.loader {
+ 			 border-top: 16px solid blue;
+ 			 border-right: 16px solid green;
+ 			 border-bottom: 16px solid red;
+			  border-left: 16px solid pink;
+							}  {
 
                 const college = gltf.scene.children[0];
 				self.scene.add( college );
@@ -196,7 +202,7 @@ class App{
             panelSize: { height: 0.5 },
             height: 256,
             name: { fontSize: 50, height: 70 },
-            info: { position:{ top: 70, backgroundColor: "#ccc", fontColor:"#000" } }
+            info: { position:{ top: 70, backgroundColor: "#FFBFD5", fontColor:"#6A5ACD" } }
         }
         const content = {
             name: "name",
