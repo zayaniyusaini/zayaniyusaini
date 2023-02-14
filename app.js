@@ -99,19 +99,13 @@ class App{
         loader.setDRACOLoader( dracoLoader );
         
         const self = this;
-		//loader.load(
-			// resource URL
-			//'college.glb',
-			// called when the resource is loaded
-			//function ( gltf ) 
 		
 		// Load a glTF resource
-		.loader {
- 			 border-top: 16px solid blue;
- 			 border-right: 16px solid green;
- 			 border-bottom: 16px solid red;
-			  border-left: 16px solid pink;
-							}  {
+		loader.load(
+			// resource URL
+			'college.glb',
+			// called when the resource is loaded
+			function ( gltf ) {
 
                 const college = gltf.scene.children[0];
 				self.scene.add( college );
